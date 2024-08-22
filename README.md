@@ -2,6 +2,13 @@
 
 This project retrieves economic data, stores it in a SQLite database, and visualizes it using a Dash dashboard.
 
+# Motivation
+
+My motivation behind this project is to deploy the CBL-Index (Conference Board Leading Index) in a more engaging way, allowing me to track the economic health of various countries. Additionally, I aim to identify investment opportunities in niche markets amidst fears of an impending recession in the coming months. However, if the US Federal Reserve decides to lower interest rates, this project might not come to fruition.
+
+* The majority of the calculations will be based on the following article: [Comprehensive Benchmark Revisions for The Conference Board Leading Economic Index® for the United States]( https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1979803)
+* The use-cases will be :  Sweden, Mexico, New Zealand and Thailand
+
 ## Setup
 
 1. Clone the repository.
