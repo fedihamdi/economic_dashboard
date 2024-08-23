@@ -1,6 +1,11 @@
+import os
+
 import requests
 import pandas as pd
 import logging
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Initialize logging
 logging.basicConfig(
@@ -12,9 +17,10 @@ logger = logging.getLogger(__name__)
 
 API_URL = "https://api.tradingeconomics.com/historical/country/mexico/indicator/Interest Rate"
 logger.info("Fetch API ...")
+API_KEY = os.getenv("API_KEY")
 
 def get_economic_data():
-    response = requests.get(API_URL, params={"c": "56dfda255f8c43a:o1701qplxvxfser"})
+    response = requests.get(API_URL, params={"c": API_KEY})
     logger.info("Chat history downloaded by the user.")
 
     data = response.json()
