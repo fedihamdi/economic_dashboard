@@ -1,0 +1,7 @@
+pandas
+requests
+plotly
+dash
+schedule
+tradingeconomics
+dotenv
